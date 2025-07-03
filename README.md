@@ -1,18 +1,22 @@
 # MRG32k3a-Numba
-This package provides A high-performance Python implementation of the MRG32k3a pseudo-random number generator of of L'Ecuyer (1999) [1]  and L'Ecuyer et al. (2002) [2] . It extends the implementation used in [mrg32k3a](https://pypi.org/project/mrg32k3a) [3]  to generate batch random numbers, accelerated with Numba. 
+This package provides A high-performance Python implementation of the MRG32k3a pseudo-random number generator of of L'Ecuyer (1999)[1]  and L'Ecuyer et al. (2002)[2] . It extends the implementation used in [mrg32k3a](https://pypi.org/project/mrg32k3a)[3]  to generate batch random numbers, accelerated with Numba. 
 [![PyPI version](https://badge.fury.io/py/mrg32k3a-numba.svg)](https://badge.fury.io/py/mrg32k3a-numba)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 This library is designed for scientific computing, Monte Carlo simulations, and other applications that require large volumes of high-quality random numbers from various statistical distributions. It provides a simple, NumPy-friendly interface for generating batches of random variates at high speed.
 
 ## Key Features
+✨ **High Performance**: Core generation loops are Just-In-Time (JIT) compiled with Numba for C-like speed.
 
-* **High Performance:** Core generation loops are Just-In-Time (JIT) compiled with Numba for C-like speed.
-* **Proven Algorithm:** Implements Pierre L'Ecuyer's MRG32k3a generator, known for its excellent statistical properties and long period ($2^{191}$).
-* **Batch Generation:** Optimized for generating large arrays of random numbers in a single call, which is significantly faster than generating them one by one.
-* **State Management:** The generator's state is automatically updated, ensuring that sequences of random numbers are continuous and reproducible.
-* **Wide Range of Distributions:** Supports uniform, normal, exponential, Gumbel, log-normal, Poisson, binomial, and multivariate normal distributions.
-* **NumPy Integration:** Seamlessly returns results as NumPy arrays for easy integration into existing data science and machine learning workflows.
+🔒 **Proven Algorithm**: Implements Pierre L'Ecuyer's MRG32k3a generator, known for its excellent statistical properties and long period ($2^{191}$).
+
+🚀 **Batch Generation**: Optimized for generating large arrays of random numbers in a single call, which is significantly faster than one-by-one generation.
+
+📚 **State Management**: The generator's state is automatically updated, ensuring random number sequences are continuous and reproducible.
+
+📊 **Wide Range of Distributions**: Supports uniform, normal, exponential, Gumbel, log-normal, Poisson, binomial, and multivariate normal distributions.
+
+🤝 **NumPy Integration**: Seamlessly returns results as NumPy arrays for easy integration into existing data science workflows.
 
 ## Installation
 
@@ -124,11 +128,9 @@ This project is licensed under the MIT License. See the `LICENSE` file for detai
 
 Contributions are welcome! If you find a bug, have a feature request, or would like to contribute code, please feel free to open an issue or submit a pull request on the project's GitHub repository.
 
-## Acknowledgments
+## References
+1. Eckman DJ, Henderson SG, Shashaani S (2023) [SimOpt: A testbed for simulation-optimization experiments.](https://pubsonline.informs.org/doi/10.1287/ijoc.2023.1273) INFORMS Journal on Computing 35(2):495–508.
+2. L'Ecuyer, Pierre (1999). [Good parameters and implementations for combined multiple recursive random number generators.](https://pubsonline.informs.org/doi/10.1287/opre.47.1.159) Operations Research 47(1):159-164.
+3. L'Ecuyer, Pierre, Richard Simard, E Jack Chen, and W. David Kelton (2002). [An object-oriented random number package with many long streams and substreams.](https://pubsonline.informs.org/doi/10.1287/opre.50.6.1073.358) Operations Research 50(6):1073-1075.
 
-This implementation is based on the combined multiple recursive generator MRG32k3a proposed by Pierre L'Ecuyer in the following paper:
-
-1. L'Ecuyer, Pierre (1999). Good parameters and implementations for combined multiple recursive random number generators. Operations Research 47(1):159-164.
-2. L'Ecuyer, Pierre, Richard Simard, E Jack Chen, and W. David Kelton (2002). An object-oriented random number package with many long streams and substreams. Operations Research 50(6):1073-1075.
-3. Eckman DJ, Henderson SG, Shashaani S (2023) SimOpt: A testbed for simulation-optimization experiments. INFORMS Journal on Computing 35(2):495–508.
 
