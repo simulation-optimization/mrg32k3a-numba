@@ -1,5 +1,5 @@
 # MRG32k3a-Numba
-This package provides A high-performance Python implementation of the MRG32k3a pseudo-random number generator of of L'Ecuyer (1999)[1] and L'Ecuyer et al. (2002). It extends the implementation used in [mrg32k3a](https://pypi.org/project/mrg32k3a) to generate batch random numbers, accelerated with Numba. 
+This package provides A high-performance Python implementation of the MRG32k3a pseudo-random number generator of of L'Ecuyer (1999) [1]  and L'Ecuyer et al. (2002) [2] . It extends the implementation used in [mrg32k3a](https://pypi.org/project/mrg32k3a) [3]  to generate batch random numbers, accelerated with Numba. 
 [![PyPI version](https://badge.fury.io/py/mrg32k3a-numba.svg)](https://badge.fury.io/py/mrg32k3a-numba)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -22,7 +22,7 @@ You can install `mrg32k3a-numba` directly from PyPI using pip:
 pip install mrg32k3a-numba
 ```
 
-This package depends on `numpy` and `numba`, which will be automatically installed if they are not already present.
+This package depends on `numpy` 、 `numba` and `mrg32k3a`, which will be automatically installed if they are not already present.
 
 ## Quick Start
 
@@ -114,7 +114,7 @@ mv_normals = rng.mvnormalvariate_batch(
 
 * [NumPy](https://numpy.org/): For numerical operations and array manipulation.
 * [Numba](https://numba.pydata.org/): For JIT compilation and performance acceleration.
-* [mrg32k3a](https://pypi.org/project/mrg32k3a): The base pure-Python implementation of the generator.
+* [mrg32k3a](https://pypi.org/project/mrg32k3a): A Python implementation of the mrg32k3a pseudo-random number generator.
 
 ## License
 
@@ -130,6 +130,5 @@ This implementation is based on the combined multiple recursive generator MRG32k
 
 1. L'Ecuyer, Pierre (1999). Good parameters and implementations for combined multiple recursive random number generators. Operations Research 47(1):159-164.
 2. L'Ecuyer, Pierre, Richard Simard, E Jack Chen, and W. David Kelton (2002). An object-oriented random number package with many long streams and substreams. Operations Research 50(6):1073-1075.
-3. Eckman DJ, Henderson SG, Shashaani S (2023) SimOpt: A testbed for simulation-optimization experiments.
-INFORMS Journal on Computing 35(2):495–508.
+3. Eckman DJ, Henderson SG, Shashaani S (2023) SimOpt: A testbed for simulation-optimization experiments. INFORMS Journal on Computing 35(2):495–508.
 
