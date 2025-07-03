@@ -1,5 +1,5 @@
 # MRG32k3a-Numba
-This package provides A high-performance Python implementation of the MRG32k3a pseudo-random number generator of of L'Ecuyer (1999) and L'Ecuyer et al. (2002). It extends the implementation used in [mrg32k3a](https://pypi.org/project/mrg32k3a) to generate batch random numbers, accelerated with Numba. 
+This package provides A high-performance Python implementation of the MRG32k3a pseudo-random number generator of of L'Ecuyer (1999)[1] and L'Ecuyer et al. (2002). It extends the implementation used in [mrg32k3a](https://pypi.org/project/mrg32k3a) to generate batch random numbers, accelerated with Numba. 
 [![PyPI version](https://badge.fury.io/py/mrg32k3a-numba.svg)](https://badge.fury.io/py/mrg32k3a-numba)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -128,9 +128,8 @@ Contributions are welcome! If you find a bug, have a feature request, or would l
 
 This implementation is based on the combined multiple recursive generator MRG32k3a proposed by Pierre L'Ecuyer in the following paper:
 
-> L'Ecuyer, Pierre (1999). Good parameters and implementations for combined multiple recursive random number generators. Operations Research 47(1):159-164.
-> L'Ecuyer, Pierre, Richard Simard, E Jack Chen, and W. David Kelton (2002). An object-oriented random number package with many long streams and substreams. Operations Research 50(6):1073-1075.
-> Eckman DJ, Henderson SG, Shashaani S (2023) SimOpt: A testbed for simulation-optimization experiments.
+1. L'Ecuyer, Pierre (1999). Good parameters and implementations for combined multiple recursive random number generators. Operations Research 47(1):159-164.
+2. L'Ecuyer, Pierre, Richard Simard, E Jack Chen, and W. David Kelton (2002). An object-oriented random number package with many long streams and substreams. Operations Research 50(6):1073-1075.
+3. Eckman DJ, Henderson SG, Shashaani S (2023) SimOpt: A testbed for simulation-optimization experiments.
 INFORMS Journal on Computing 35(2):495–508.
 
-The Beasley-Springer-Moro algorithm is used for the fast approximation of the normal quantile function.
