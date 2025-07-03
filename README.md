@@ -1,5 +1,5 @@
 # MRG32k3a-Numba
-This package provides A high-performance Python implementation of the MRG32k3a pseudo-random number generator of of L'Ecuyer (1999)[1]  and L'Ecuyer et al. (2002)[2] . It extends the implementation used in [mrg32k3a](https://pypi.org/project/mrg32k3a)[3]  to generate batch random numbers, accelerated with Numba. 
+This package provides A high-performance Python implementation of the MRG32k3a pseudo-random number generator of of L'Ecuyer (1999) and L'Ecuyer et al. (2002). It extends the implementation used in [mrg32k3a](https://pypi.org/project/mrg32k3a) to generate batch random numbers, accelerated with Numba. 
 [![PyPI version](https://badge.fury.io/py/mrg32k3a-numba.svg)](https://badge.fury.io/py/mrg32k3a-numba)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
