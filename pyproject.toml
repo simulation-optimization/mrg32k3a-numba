@@ -1,0 +1,50 @@
+# This file defines the project's build system and metadata.
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+# --- Required Metadata ---
+name = "mrg32k3a-numba"
+version = "0.1.1"
+
+# --- Author Information ---
+authors = [
+    { name="Song Huang", email="23b910018@stu.hit.edu.cn" },
+    { name="Guangxin Jiang", email="gxjiang@hit.edu.cn" },
+    { name="Ying Zhong", email="yzhong4@uestc.edu.cn" },
+]
+
+# --- Descriptions ---
+description = "An accelerated version of the MRG32k3a generator using Numba for high-performance batch operations." #
+readme = "README.md"
+requires-python = ">=3.8"
+
+# --- Keywords and Classifiers for Discovery ---
+keywords = ["random number generator", "rng", "mrg32k3a", "numba", "simulation"]
+license = { file = "LICENSE" }
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Science/Research",
+    "Intended Audience :: Developers",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+# --- Dependencies required for your project to run ---
+dependencies = [
+    "numpy", #
+    "numba", #
+    "mrg32k3a"  # The base class is imported from here
+]
+
+# --- Project URLs ---
+[project.urls]
+"Homepage" = "https://github.com/simulation-optimization/mrg32k3a-numba"
+"Bug Tracker" = "https://github.com/simulation-optimization/mrg32k3a-numba/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
