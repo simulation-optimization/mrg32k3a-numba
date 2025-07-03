@@ -1,6 +1,5 @@
 # MRG32k3a-Numba
 This package provides A high-performance Python implementation of the MRG32k3a pseudo-random number generator of of L'Ecuyer (1999) and L'Ecuyer et al. (2002). It extends the implementation used in [mrg32k3a](https://pypi.org/project/mrg32k3a) to generate batch random numbers, accelerated with Numba. 
-[![PyPI version](https://badge.fury.io/py/mrg32k3a-numba.svg)]([https://badge.fury.io/py/mrg32k3a-numba](https://pypi.org/project/mrg32k3a-numba/0.1.1/))
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 This library is designed for scientific computing, Monte Carlo simulations, and other applications that require large volumes of high-quality random numbers from various statistical distributions. It provides a simple, NumPy-friendly interface for generating batches of random variates at high speed.
